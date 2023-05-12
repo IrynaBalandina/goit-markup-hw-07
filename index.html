@@ -71,14 +71,8 @@
     >
       <svg class="menu-toggle-icon"
         width="32"
-        height="22"
-      
-      >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
+        height="32" >
+    
         <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
       </svg>
     </button>
@@ -207,17 +201,37 @@
         <h2 class="sub-title">What are we doing</h2>
         <ul class="list-doing list">
           <li class="list-doing-item">
-            <img src="./images/portfolio/img-1.jpg" alt="laptop" width="360" />
-          </li>
-          <li class="list-doing-item">
-            <img src="./images/portfolio/img-2.jpg" alt="phone" width="360" />
+            <img
+            class="img"
+            srcset="./images/portfolio/doing1@1x.jpg 1x, ./images/portfolio/doing1@2x.jpg 2x"
+            src="./images/portfolio/img-1.jpg"
+            alt="Work 1"
+            width="360"
+            height="300"
+            loading="lazy"
+          />
           </li>
           <li class="list-doing-item">
             <img
-              src="./images/portfolio/img-3.jpg"
-              alt="smartphone"
-              width="360"
-            />
+            class="img"
+            srcset="./images/portfolio/doing2@1x.jpg 1x, ./images/portfolio/doing2@2x.jpg 2x"
+            src="./images/portfolio/img-2.jpg"
+            alt="Work 1"
+            width="360"
+            height="300"
+            loading="lazy"
+          />
+          </li>
+          <li class="list-doing-item">
+            <img
+            class="img"
+            srcset="./images/portfolio/doing3@1x.jpg 1x, ./images/portfolio/doing3@2x.jpg 2x"
+            src="./images/portfolio/img-3.jpg"
+            alt="Work 1"
+            width="360"
+            height="300"
+            loading="lazy"
+          />
           </li>
         </ul>
       </div>
@@ -524,26 +538,21 @@
     <!-- Mobile menu container -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="close"
+        
+          width="8"
+          height="8"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+
+        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu list">
-        <li><a href="./index.html" class="mobile-menu-link link">Studio</a></li>
-        <li><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a></li>
-        <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+        <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link  active">Studio</a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
       </ul>
       <ul class="mobile-contacts list">
         <li>
@@ -555,7 +564,7 @@
         
    
       </ul>
-      <ul class="social-media-names list">
+      <ul class="social-media-name list">
         <li class="footer-social-item">
           <a href class="footer-social-link">
             <svg class="social-media-icon" width="24" height="24">
